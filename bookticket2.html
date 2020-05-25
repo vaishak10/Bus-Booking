@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Bus Booking Website</title>
+        <link href="style666.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+        <div class="row">
+            <div class="logo">
+            <img src="bus1.jpeg">
+            </div>
+        <ul class="main-nav">
+            <li class="active"><a> HOME</a></li>
+            <li><a> SERVICES</a></li>
+            <li><a> ABOUT US</a></li>
+            <li><a> CONTACT US</a></li>
+            </ul>    
+            </div>
+            <div class="hero">
+                <h1><i>Bus Booking Management</i></h1>
+            </div>
+            
+           <ul class="sub-nav">
+        <li><a href="search.html">Tickets</a>
+        </li>
+        <li><a href="">Vehicle</a>
+        </li>
+               
+        <li><a href="">Driver details</a></li>
+        <li><a href="">Passenger details</a></li>     
+        </ul>          
+            
+        <div class="form">
+        <form class="register-form" action="bookticket2.php" method="POST">
+        From:<input list="browsers" id="from" name="org" placeholder="Enter city"/>
+    <datalist id="browsers">
+    <option value="Bengaluru">
+    <option value="Mangalore">
+    <option value="Hubli">
+    </datalist>
+
+        To:<input list="browsers" id="to" name="destination" placeholder="Enter city"/>
+     <datalist id="browsers">
+    <option value="Bengaluru">
+    <option value="Mangalore">
+    <option value="Hubli">
+    </datalist>
+        Via:<input list="browsers1" id="via" name="viaa" placeholder="Enter via"/>
+     <datalist id="browsers1">
+    <option value="Mysore">
+    <option value="Hassan">
+    <option value="Chitradurga">
+      <option value="Shivamoga">  
+    </datalist>
+        Date of journey:<input type="date" name="dateoj" id="date"/> 
+            <br>
+        Departure Time:<input type="time" list="numbers" name="dept" id="time"/>
+       <datalist id="numbers">
+    <option value="21:00">
+        
+    <option value="08:00">
+    </datalist>        
+            <br>
+        Bus type:<input list="buses" name="bustp">
+        <datalist id="buses">
+    <option value="Ac Sleeper">
+    <option value="Non-Ac Sleeper">
+    <option value="Ac semi sleeper">
+    <option value="Non Ac Semi sleeper">
+    </datalist>
+            <button>Search</button>
+        </form>  
+        
+    <div>
+        <form>
+            <p><h2><u>FARES</u></h2>
+         <br>
+         <p> Ac-Sleeper: Rs.1000<br>Non-Ac Sleeper: Rs.700<br>Ac Semi Sleeper: Rs.600
+             <br> Non-Ac Semi Sleeper: Rs.400</p>
+            
+        <div class="div1"><p><h4>Note:</h4> Sleeper bus services wont be availabe for day time travelling</div>
+         
+        
+         
+        </form>  
+            </div>
+            
+
+        </header>
+    </body>
+</html>

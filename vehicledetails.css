@@ -1,0 +1,126 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+header
+{
+     
+    background-image:linear-gradient(rgba(0,0,60,0.5),rgba(130,0,0,0.5)),url(movingbus1.jpg);
+    height: 285vh; 
+    background-size:contain;
+    background-position:center;
+}
+.main-nav
+{
+    font-family: monospace;
+    float:right;
+}
+.main-nav li
+{
+    font-family: monospace;
+    display:inline-block;
+}
+.main-nav li a
+{
+    color: white;
+    text-decoration:none;
+    padding:5px 20px;
+    font-family:monospace;
+    font-size:15px;
+}
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+
+.logo img
+{
+    width: 150px;
+    height: auto;
+    float:left;
+
+}
+body
+{
+    font-family:cursive;
+}
+.row
+{
+    max-width:1200px;
+        margin:auto;
+}
+
+h1
+{
+    color:white;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+
+}
+
+.sub-nav li
+{
+    float: left;
+    width:185px;
+    height:40px;
+    background-color:black;
+    font-family: monospace;
+    opacity: 0.8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 2px;
+
+}
+
+.sub-nav li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.sub-nav li a:hover
+{
+    background-color: forestgreen;
+}
+ul li ul li
+{
+    display: none;
+}
+  table {
+   border-collapse:separate;
+   width: 100%;
+   color:aqua;
+   font-family: monospace;
+   font-size: 25px;
+   text-align:center;
+     } 
+  th {
+   background-color:brown;
+   color: black;  
+      
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

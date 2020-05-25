@@ -1,0 +1,53 @@
+1)
+select d.dname
+from driver_details d,bus_details b,routes r
+where b.did=d.did and
+r.r_id=b.rid and 
+r.origin='Bengaluru' and r.dest='Mangalore' and
+b.bustype='Non-Ac Sleeper'
+union
+(select d.dname
+from driver_details d,bus_details b,routes r
+where b.did=d.did and
+r.r_id=b.rid and 
+r.origin='Bengaluru' and r.dest='Mangalore' and
+b.bustype='Ac semi sleeper');
+
+
+2)
+select count(distinct b.bid) as countbus
+from bus_details b,routes r
+where b.rid=r.r_id and
+r.origin='Bengaluru' and r.dep_time='21:00:00' and b.bustype='Ac Sleeper' or
+b.bustype='Non-Ac Sleeper';
+
+5)
+update bus_details set fare=1.15*fare where bid in
+(select bidfk from transaction where doj='2018-12-25');
+select * from bus_details,transaction where bid=bidfk and doj='2018-12-25';
+
+4)
+select d.dname,d.dmobile
+from driver_details d,bus_details b
+where b.did=d.did AND b.bid in 
+(select b.bid
+from bus_details b,routes r
+where b.rid=r.r_id and
+r.origin='Mangalore' and r.dest='Bengaluru' and 
+r.dep_time='21:00:00' and 
+b.bustype='Ac Sleeper');
+
+
+
+3) print passenger details
+select p.pid,p.pname,p.pnumber,t.doj,r.origin,r.via,r.dest,r.dep_time,r.arr_time,b.bustype,b.bp_no,t.seatno,b.fare
+from bus_details b,passengers p,transaction t,routes r
+where t.pidfk=p.pid and t.bidfk=b.bid and r.r_id=b.rid and t.tid_pk=13;
+
+6)
+SELECT b.bp_no ,count(t.bidfk) as nop 
+FROM transaction t,bus_details b 
+where b.bid=t.bidfk 
+group by t.bidfk 
+having nop>1;
+

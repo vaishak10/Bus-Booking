@@ -1,0 +1,144 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+header
+{
+    background-image:linear-gradient(rgba(0,0,100,0.5),rgba(0,100,0,0.5)),url(busmoving11.jpg);
+    height: 160vh;
+    background-size:contain;
+    background-position: center;
+}
+.main-nav
+{
+    font-family: monospace;
+    float:right;
+}
+.main-nav li
+{
+    font-family: monospace;
+    display:inline-block;
+}
+.main-nav li a
+{
+    color: white;
+    text-decoration:none;
+    padding:5px 20px;
+    font-family:monospace;
+    font-size:15px;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+.logo img
+{
+    width: 150px;
+    height: auto;
+    float:left;
+
+}
+body
+{
+    font-family:cursive;
+}
+.row
+{
+    max-width:1200px;
+        margin:auto;
+}
+
+h1
+{
+    color:white;
+}
+
+ul
+{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+
+}
+
+.sub-nav li
+{
+    float: left;
+    width:185px;
+    height:40px;
+    background-color:black;
+    font-family: monospace;
+    opacity: 0.8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 2px;
+
+}
+
+.sub-nav li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.sub-nav li a:hover
+{
+    background-color: forestgreen;
+}
+ul li ul li
+{
+    display: none;
+}
+
+
+.form{
+    position:inherit;
+    z-index:1;
+    background: rgba(0,130,0,0.4);
+    max-width:330px;
+    margin:60 auto 60px;
+    padding: 18px;
+    text-align:center;
+    
+}
+.form input{
+    font-family:sans-serif;
+    outline: 1;
+    background: whitesmoke;
+    width:100%;
+    border:0;
+    margin: 10px 10px 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.form button{
+    font-family:sans-serif;
+    text-transform:uppercase;
+    outline:0;
+    background:brown;
+    width:100%;
+    border:0;
+    padding:20px;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+.form .message a{
+    color: yellow;
+    
+}
+.form .login-form{
+    display:none;
+}
+.div1{
+    float:inherit;
+}
+
+
+
+
+

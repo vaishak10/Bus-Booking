@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Bus Booking Website</title>
+        <link href="userdetails1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+        <div class="row">
+            <div class="logo">
+            <img src="bus1.jpeg">
+            </div>
+        <ul class="main-nav">
+            <li class="active"><a href=""> HOME</a></li>
+            <li><a> SERVICES</a></li>
+            <li><a> ABOUT US</a></li>
+            <li><a> CONTACT US</a></li>
+            </ul>    
+            </div>
+            <div class="hero">
+                <h1><i>Bus Booking Management</i></h1>
+            </div>
+            <ul class="sub-nav">
+        <li><a href="search.html">Tickets</a>
+            <ul>
+                <li><a href="">Book tickets</a></li>
+                <li><a href="">Cancel tickets</a></li>
+                <li><a href="">View ticket</a></li>
+            </ul>
+        </li>
+        <li><a href="">Vehicle</a>
+        </li>
+                 
+        <li><a href="">Driver details</a></li>
+        <li><a href="">Passenger details</a></li>        
+        </ul>          
+           
+         <div class="login-page">
+        <div class="form">
+         <form class="register-form" method="POST" action="action.php">
+			 Name:<input type="text" name="name" placeholder="name"/><br />
+             Age:<input type="number" name="age" placeholder="age" /><br />
+			 Gender: <input type="text" name="gender" list="gender" placeholder="gender">
+             <datalist id="gender">
+             <option value="Male">Male</option>
+             <option value="Female">Female</option>
+             </datalist>
+			Mobile : <input type="number" name="number" placeholder="Mobile no"/><br />
+            Seat No: <input type="number" name="seat" placeholder="Enter the seat No."/><br />
+
+        
+             <button type="submit" value="submit"> Book ticket </button>            
+            </form>
+        </div>
+        </div>  
+
+        </header>
+    </body>
+</html>
