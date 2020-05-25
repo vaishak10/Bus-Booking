@@ -4,3 +4,4 @@ Technologies used-
 Front-end: HTML,CSS,JavaScript(for dynamic changes in forms)
 PHP used for connection between database and front end components
 MySql Database
+Requires a local host server like xampp which was used for this project
